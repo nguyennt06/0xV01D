@@ -41,6 +41,7 @@
 - Tạo document bằng cách ghép file có sẵn trên server với title do người dùng nhập
 - Xem document qua id mà người dùng nhập vào
 
+Source:
 ![alt text](images/image8.png)
 
 \- Lỗ hổng Path Traversal được mình tìm ra khi thử inject:
@@ -64,7 +65,9 @@
 }
 ```
 
-\- Sau đó, sử dụng chức năng xem tài liệu bằng số id, nhập vào id của document và web trả về giá trị của các biến môi trường (Trong đó có FLAG=`0xV01D{...}`)
+\- Sau đó, sử dụng chức năng xem tài liệu bằng số id, nhập vào id của document và web trả về giá trị của các biến môi trường 
+
+![alt text](images/image9.png)
 
 # Action Packed
 
