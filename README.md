@@ -17,7 +17,7 @@
 
 \- Đường dẫn vô cùng random và gần như không thể brute-force:
 
-![alt text](images/image.png)
+![alt text](images/image5.png)
 
 \- Trong đó, lộ tài khoản admin với thông tin `EAdmin:0e46289032038065916139621039085883773413820991920706299695051332`, khi đưa vào AI, nó xác nhận đây là SHA-256 magic hash
 
@@ -25,15 +25,23 @@
 
 > 34250003024812  --SHA256-->  0e46289032038065916139621039085883773413820991920706299695051332
 
-\- Đăng nhập thành công, truy cập Admin panel và nhận flag
+\- Đăng nhập thành công, truy cập Admin panel tại `/admin.php` và nhận flag
+
+![alt text](images/image6.png)
 
 # Webifile
 
-\- Bài này có chức năng
+\- Thực hiện đăng ký tài khoản và đăng nhập
+
+![alt text](images/image7.png)
+
+\- Bấm `Manage Documents`, nhận ra website này có chức năng
 - Tải file 
 - Tạo document với title và content
 - Tạo document bằng cách ghép file có sẵn trên server với title do người dùng nhập
 - Xem document qua id mà người dùng nhập vào
+
+![alt text](images/image8.png)
 
 \- Lỗ hổng Path Traversal được mình tìm ra khi thử inject:
 
@@ -60,9 +68,13 @@
 
 # Action Packed
 
+![alt text](images/image2.png)
+
 \- Chall là một web giao diện, tĩnh, khi tương tác với các nút thì không về có dấu hiệu của việc web đã nhận thao tác
 
-\- Nhưng khi vào Burp, trong Proxy đã trả về response là API key khi server tin tưởng toàn bộ thao tác của ta và đính kèm flag
+\- Bấm vào `Generate Master Token` và qua Burp nhận flag khi server tin tưởng toàn bộ thao tác của ta mà không về xác thực admin
+
+![alt text](images/image3.png)
 
 # Silent Oracle
 
