@@ -36,7 +36,7 @@
 ![alt text](images/image7.png)
 
 \- Bấm `Manage Documents`, nhận ra website này có chức năng
-- Tải file 
+- Tải file (vào thư mục tạm)
 - Tạo document với title và content
 - Tạo document bằng cách ghép file có sẵn trên server với title do người dùng nhập
 - Xem document qua id mà người dùng nhập vào
